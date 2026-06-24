@@ -97,12 +97,5 @@ class Product(Resource):
         return {"message": "Produit supprime"}, 200
 
 
-@app.route("/debug-sentry")
-def trigger_error():
-    """Route de test : declenche une erreur volontaire pour verifier Sentry."""
-    division_par_zero = 1 / 0  # noqa: F841 - erreur intentionnelle
-    return "ne sera jamais atteint"
-
-
 if __name__ == "__main__":
     app.run(debug=True)
