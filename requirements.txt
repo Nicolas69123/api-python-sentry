@@ -1,0 +1,5 @@
+flask
+flask-restx
+flask-cors
+mysql-connector-python
+sentry-sdk[flask]
